@@ -21,6 +21,7 @@ server.listen('127.0.0.1:8081', function(request, response) {
   }
 });
 
+/// WEBPAGE
 page.onConsoleMessage = function(message) {
   console.log('PhantomJS: ' + message);
 };
