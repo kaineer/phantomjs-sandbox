@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <style type='text/css'>
+      .container {
+        width: 500px;
+        height: 500px;
+        background: #fff;
+        margin: 0; padding: 0;
+      }
+
+      .container_clicked {
+        background: #000;
+      }
+
+      body, html { margin: 0; padding: 0; }
+    </style>
+
+    <script type='text/javascript'>
+      window.onload = function() {
+        var container = document.querySelector('.container');
+        container.onclick = function() {
+          container.classList.add('container_clicked');
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
