@@ -37,11 +37,11 @@ page.onLoadFinished = function(status) {
   if(status === 'success') {
     console.log(page.content);
     console.log('---------------------------------------');
+
+    phantom.exit(0);
+  } else {
+    phantom.exit(1);
   }
 };
 
-page.open('http://127.0.0.1:8080', function(status) {
-  if(status === 'success') {
-
-  }
-});
+page.open('http://127.0.0.1:8080');
